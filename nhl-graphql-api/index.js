@@ -48,31 +48,63 @@ const typeDefs = gql`
   }
 `;
 
+
+
+// ✅ URL of your hosted JSON file on GitHub
+const JSON_URL = "https://raw.githubusercontent.com/cabusto/nhl-graphql/refs/heads/main/raw.json";
 // Cache for JSON data
 let gamesCache = null;
-const getGames = () => {
-  if (!gamesCache) {
+let lastFetchTime = null;
+const CACHE_TTL = 3600000; // 1 hour in milliseconds
+
+const getGames = async () => {
+  const now = Date.now();
+
+  // Check if cache is valid
+  if (gamesCache && lastFetchTime && (now - lastFetchTime < CACHE_TTL)) {
+    return gamesCache;
+  }
+
+  try {
+    const fetch = await import('node-fetch').then(mod => mod.default);
+    const response = await fetch(JSON_URL);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    gamesCache = data;
+    lastFetchTime = now;
+    console.log('Successfully loaded games data from remote URL');
+    return gamesCache;
+  } catch (error) {
+    console.error('Error fetching games data from remote URL:', error);
+
+    // Fallback to local file if remote fetch fails
     try {
-      const rawData = fs.readFileSync(path.join(__dirname, '../scripts/raw.json'));
+      console.log('Attempting to load data from local file as fallback...');
+      const rawData = fs.readFileSync(path.join(__dirname, 'raw.json'));
       gamesCache = JSON.parse(rawData);
-    } catch (error) {
-      console.error('Error loading games data:', error);
+      lastFetchTime = now;
+      return gamesCache;
+    } catch (fallbackError) {
+      console.error('Error loading games data from local fallback:', fallbackError);
       return [];
     }
   }
-  return gamesCache;
 };
 
 // Define your resolvers
 const resolvers = {
   Query: {
-    games: () => getGames(),
-    upcomingGames: () => {
-      const games = getGames();
+    games: async () => await getGames(),
+    upcomingGames: async () => {
+      const games = await getGames();
       return games.filter(game => !game.IsClosed);
     },
-    gamesByDateRange: (_, { startDate, endDate, team }) => {
-      const games = getGames();
+    gamesByDateRange: async (_, { startDate, endDate, team }) => {
+      const games = await getGames();
       const start = new Date(startDate);
       const end = new Date(endDate);
 
@@ -88,8 +120,8 @@ const resolvers = {
         return isWithinDateRange && isTeamMatch;
       });
     },
-    team: (_, { name }) => {
-      const games = getGames();
+    team: async (_, { name }) => {
+      const games = await getGames();
       const teamGame = games.find(game =>
         game.HomeTeam.Name === name ||
         game.AwayTeam.Name === name
@@ -107,8 +139,8 @@ const resolvers = {
       }
       return null;
     },
-    todaysGames: () => {
-      const games = getGames();
+    todaysGames: async () => {
+      const games = await getGames();
       const today = new Date();
       const todayString = today.toISOString().split('T')[0]; // Format: YYYY-MM-DD
 
@@ -118,8 +150,8 @@ const resolvers = {
         return gameDateString === todayString;
       });
     },
-    weeklyGameCount: (_, { weekNumber, year }) => {
-      const games = getGames();
+    weeklyGameCount: async (_, { weekNumber, year }) => {
+      const games = await getGames();
       const currentYear = year || new Date().getFullYear();
 
       // Get first day of the year
