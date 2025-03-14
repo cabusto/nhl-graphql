@@ -3,9 +3,9 @@ const { startServerAndCreateNextHandler } = require('@as-integrations/next');
 const { typeDefs, resolvers } = require('../index');
 
 const server = new ApolloServer({
-  typeDefs,
-  resolvers,
-  introspection: true,
+    typeDefs,
+    resolvers,
+    introspection: true,
 });
 
 module.exports = startServerAndCreateNextHandler(server);
