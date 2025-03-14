@@ -220,7 +220,11 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  introspection: true,
+  introspection: true, // Must be enabled for Studio
+  cors: {
+    origin: '*', // For development; consider restricting in production
+    credentials: true
+  }
 });
 
 // For Vercel deployment
@@ -241,4 +245,14 @@ async function startServer() {
 startServer();
 
 // Export for serverless environments like Vercel
-module.exports = server;
+module.exports = {
+  typeDefs,
+  resolvers,
+  server,
+  getGames
+};
+
+// Keep the startServer function for local development
+if (process.env.NODE_ENV !== 'production') {
+  startServer();
+}
