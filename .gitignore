@@ -132,5 +132,7 @@ dist
 nhl-graphql-api/node_modules
 nhl-schedule-app/node_modules
 .venv
+venv
 .vscode
 .DS_Store
+scripts/venv/pyvenv.cfg
