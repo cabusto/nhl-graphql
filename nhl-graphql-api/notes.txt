@@ -1,0 +1,21 @@
+Deploy to prod on Vercel
+https://hankins.medium.com/how-to-deploy-an-apollo-express-graphql-api-with-vercel-7ec42ace7d5a
+
+https://www.apollographql.com/tutorials/intro-strawberry/02-graphql-basics
+
+
+Things to do:
+- how to run -> npm run starting
+- Add players "db"
+- Store all this stuff in a db?
+- deploy to prod with daily script that runs to update stats in db
+- figure out how to provision keys/ids
+- sell and market?
+- Use it for sportsort (maybe rename?)
+
+
+Queries for Schedule
+- How many games between 2 dates per team
+- Home vs Away games?
+
+Queries for Players?

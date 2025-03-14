@@ -1,0 +1,920 @@
+Week starting on 2024-09-30:
+  BUF plays 2 games against: NJ, NJ
+  NJ plays 2 games against: BUF, BUF
+
+Week starting on 2024-10-07:
+  SEA plays 3 games against: STL, MIN, DAL
+  STL plays 3 games against: SEA, SJ, VEG
+  FLA plays 3 games against: BOS, OTT, BUF
+  BOS plays 3 games against: FLA, MON, LA
+  UTA plays 3 games against: CHI, NYI, NYR
+  CHI plays 3 games against: UTA, WPG, EDM
+  MON plays 3 games against: TOR, BOS, OTT
+  TOR plays 3 games against: MON, NJ, PIT
+  PIT plays 3 games against: NYR, DET, TOR
+  NYR plays 2 games against: PIT, UTA
+  EDM plays 3 games against: WPG, CHI, CGY
+  WPG plays 3 games against: EDM, CHI, MIN
+  VAN plays 2 games against: CGY, PHI
+  CGY plays 3 games against: VAN, PHI, EDM
+  VEG plays 3 games against: COL, STL, ANA
+  COL plays 2 games against: VEG, CBJ
+  BUF plays 2 games against: LA, FLA
+  LA plays 2 games against: BUF, BOS
+  DET plays 2 games against: PIT, NAS
+  NJ plays 2 games against: TOR, WAS
+  OTT plays 2 games against: FLA, MON
+  NYI plays 2 games against: UTA, DAL
+  NAS plays 2 games against: DAL, DET
+  DAL plays 3 games against: NAS, NYI, SEA
+  MIN plays 3 games against: CBJ, SEA, WPG
+  CBJ plays 2 games against: MIN, COL
+  SJ plays 2 games against: STL, ANA
+  CAR plays 2 games against: TB, TB
+  TB plays 2 games against: CAR, CAR
+  PHI plays 2 games against: VAN, CGY
+  WAS plays 1 games against: NJ
+  ANA plays 2 games against: SJ, VEG
+
+Week starting on 2024-10-14:
+  BOS plays 3 games against: FLA, COL, UTA
+  FLA plays 4 games against: BOS, CBJ, VAN, VEG
+  NJ plays 4 games against: UTA, CAR, OTT, WAS
+  UTA plays 3 games against: NJ, ANA, BOS
+  OTT plays 3 games against: LA, NJ, TB
+  LA plays 4 games against: OTT, TOR, MON, ANA
+  NYR plays 3 games against: DET, DET, TOR
+  DET plays 3 games against: NYR, NYR, NAS
+  MON plays 3 games against: PIT, LA, NYI
+  PIT plays 4 games against: MON, BUF, CAR, WPG
+  COL plays 4 games against: NYI, BOS, ANA, SJ
+  NYI plays 3 games against: COL, STL, MON
+  CAR plays 3 games against: NJ, PIT, STL
+  TB plays 3 games against: VAN, VEG, OTT
+  VAN plays 3 games against: TB, FLA, PHI
+  WAS plays 3 games against: VEG, DAL, NJ
+  VEG plays 3 games against: WAS, TB, FLA
+  CBJ plays 3 games against: FLA, BUF, MIN
+  STL plays 3 games against: MIN, NYI, CAR
+  MIN plays 2 games against: STL, CBJ
+  DAL plays 3 games against: SJ, WAS, EDM
+  SJ plays 4 games against: DAL, CHI, WPG, COL
+  NAS plays 3 games against: SEA, EDM, DET
+  SEA plays 3 games against: NAS, PHI, CGY
+  CGY plays 2 games against: CHI, SEA
+  CHI plays 3 games against: CGY, SJ, BUF
+  EDM plays 3 games against: PHI, NAS, DAL
+  PHI plays 3 games against: EDM, SEA, VAN
+  BUF plays 3 games against: PIT, CBJ, CHI
+  TOR plays 2 games against: LA, NYR
+  ANA plays 3 games against: UTA, COL, LA
+  WPG plays 2 games against: SJ, PIT
+
+Week starting on 2024-10-21:
+  TOR plays 4 games against: TB, CBJ, STL, BOS
+  TB plays 4 games against: TOR, NJ, MIN, WAS
+  PHI plays 4 games against: WAS, WAS, MIN, MON
+  WAS plays 3 games against: PHI, PHI, TB
+  FLA plays 3 games against: MIN, NYR, NYI
+  MIN plays 3 games against: FLA, TB, PHI
+  NJ plays 4 games against: TB, DET, NYI, ANA
+  BUF plays 2 games against: DAL, DET
+  DAL plays 3 games against: BUF, BOS, CHI
+  MON plays 3 games against: NYR, STL, PHI
+  NYR plays 3 games against: MON, FLA, ANA
+  CBJ plays 2 games against: TOR, NAS
+  NYI plays 3 games against: DET, NJ, FLA
+  DET plays 4 games against: NYI, NJ, BUF, EDM
+  STL plays 3 games against: WPG, TOR, MON
+  WPG plays 3 games against: STL, SEA, CGY
+  CHI plays 3 games against: VAN, NAS, DAL
+  VAN plays 2 games against: CHI, PIT
+  NAS plays 3 games against: BOS, CHI, CBJ
+  BOS plays 3 games against: NAS, DAL, TOR
+  CGY plays 3 games against: PIT, CAR, WPG
+  PIT plays 3 games against: CGY, EDM, VAN
+  EDM plays 3 games against: CAR, PIT, DET
+  CAR plays 3 games against: EDM, CGY, SEA
+  UTA plays 3 games against: OTT, COL, LA
+  OTT plays 3 games against: UTA, VEG, COL
+  ANA plays 3 games against: SJ, NYR, NJ
+  SJ plays 3 games against: ANA, LA, VEG
+  SEA plays 3 games against: COL, WPG, CAR
+  COL plays 3 games against: SEA, UTA, OTT
+  VEG plays 3 games against: LA, OTT, SJ
+  LA plays 3 games against: VEG, SJ, UTA
+
+Week starting on 2024-10-28:
+  BUF plays 3 games against: FLA, NYI, DET
+  FLA plays 3 games against: BUF, DAL, DAL
+  TB plays 4 games against: NAS, COL, MIN, WPG
+  NAS plays 3 games against: TB, EDM, COL
+  CBJ plays 4 games against: EDM, NYI, WPG, WAS
+  EDM plays 3 games against: CBJ, NAS, CGY
+  WPG plays 4 games against: TOR, DET, CBJ, TB
+  TOR plays 4 games against: WPG, SEA, STL, MIN
+  COL plays 3 games against: CHI, TB, NAS
+  CHI plays 4 games against: COL, SJ, LA, ANA
+  UTA plays 3 games against: SJ, CGY, VEG
+  SJ plays 4 games against: UTA, LA, CHI, VAN
+  VAN plays 3 games against: CAR, NJ, SJ
+  CAR plays 3 games against: VAN, BOS, WAS
+  VEG plays 3 games against: CGY, LA, UTA
+  CGY plays 4 games against: VEG, UTA, NJ, EDM
+  BOS plays 4 games against: PHI, CAR, PHI, SEA
+  PHI plays 3 games against: BOS, STL, BOS
+  MON plays 3 games against: SEA, WAS, PIT
+  SEA plays 4 games against: MON, TOR, OTT, BOS
+  NYI plays 4 games against: ANA, CBJ, BUF, NYR
+  ANA plays 3 games against: NYI, PIT, CHI
+  OTT plays 3 games against: STL, NYR, SEA
+  STL plays 3 games against: OTT, PHI, TOR
+  WAS plays 4 games against: NYR, MON, CBJ, CAR
+  NYR plays 3 games against: WAS, OTT, NYI
+  PIT plays 3 games against: MIN, ANA, MON
+  MIN plays 3 games against: PIT, TB, TOR
+  LA plays 3 games against: SJ, VEG, CHI
+  DET plays 2 games against: WPG, BUF
+  NJ plays 2 games against: VAN, CGY
+  DAL plays 2 games against: FLA, FLA
+
+Week starting on 2024-11-04:
+  NAS plays 4 games against: LA, WAS, FLA, UTA
+  LA plays 4 games against: NAS, MIN, VAN, CBJ
+  EDM plays 3 games against: NJ, VEG, VAN
+  NJ plays 4 games against: EDM, MON, NYI, SJ
+  BUF plays 3 games against: OTT, NYR, CGY
+  OTT plays 3 games against: BUF, NYI, BOS
+  CAR plays 3 games against: PHI, PIT, COL
+  PHI plays 3 games against: CAR, TB, FLA
+  MON plays 3 games against: CGY, NJ, TOR
+  CGY plays 3 games against: MON, BOS, BUF
+  TOR plays 3 games against: BOS, DET, MON
+  BOS plays 3 games against: TOR, CGY, OTT
+  NYI plays 3 games against: PIT, OTT, NJ
+  PIT plays 3 games against: NYI, CAR, WAS
+  STL plays 3 games against: TB, UTA, WAS
+  TB plays 2 games against: STL, PHI
+  WPG plays 3 games against: UTA, COL, DAL
+  UTA plays 3 games against: WPG, STL, NAS
+  MIN plays 4 games against: LA, SJ, ANA, CHI
+  COL plays 3 games against: SEA, WPG, CAR
+  SEA plays 2 games against: COL, VEG
+  ANA plays 3 games against: VAN, MIN, CBJ
+  VAN plays 3 games against: ANA, LA, EDM
+  SJ plays 3 games against: CBJ, MIN, NJ
+  CBJ plays 3 games against: SJ, LA, ANA
+  WAS plays 3 games against: NAS, PIT, STL
+  CHI plays 3 games against: DET, DAL, MIN
+  DET plays 3 games against: CHI, TOR, NYR
+  VEG plays 2 games against: EDM, SEA
+  NYR plays 2 games against: BUF, DET
+  FLA plays 2 games against: NAS, PHI
+  DAL plays 2 games against: CHI, WPG
+
+Week starting on 2024-11-11:
+  BUF plays 3 games against: MON, STL, PHI
+  MON plays 3 games against: BUF, MIN, CBJ
+  PHI plays 3 games against: SJ, OTT, BUF
+  SJ plays 3 games against: PHI, NYR, PIT
+  PIT plays 4 games against: DAL, DET, CBJ, SJ
+  DAL plays 3 games against: PIT, BOS, MIN
+  CGY plays 3 games against: LA, VAN, NAS
+  LA plays 3 games against: CGY, COL, DET
+  COL plays 3 games against: NAS, LA, WAS
+  NAS plays 4 games against: COL, EDM, CGY, VAN
+  VEG plays 4 games against: CAR, ANA, UTA, WAS
+  CAR plays 4 games against: VEG, UTA, OTT, STL
+  NYR plays 3 games against: WPG, SJ, SEA
+  WPG plays 3 games against: NYR, TB, FLA
+  TOR plays 3 games against: OTT, WAS, EDM
+  OTT plays 3 games against: TOR, PHI, CAR
+  FLA plays 3 games against: NJ, NJ, WPG
+  NJ plays 3 games against: FLA, FLA, TB
+  STL plays 4 games against: BOS, BUF, BOS, CAR
+  BOS plays 3 games against: STL, DAL, STL
+  EDM plays 3 games against: NYI, NAS, TOR
+  NYI plays 3 games against: EDM, VAN, SEA
+  VAN plays 4 games against: CGY, NYI, CHI, NAS
+  SEA plays 4 games against: CBJ, CHI, NYI, NYR
+  CBJ plays 3 games against: SEA, PIT, MON
+  DET plays 3 games against: PIT, ANA, LA
+  WAS plays 3 games against: TOR, COL, VEG
+  UTA plays 2 games against: CAR, VEG
+  ANA plays 2 games against: VEG, DET
+  TB plays 2 games against: WPG, NJ
+  MIN plays 2 games against: MON, DAL
+  CHI plays 2 games against: SEA, VAN
+
+Week starting on 2024-11-18:
+  BOS plays 3 games against: CBJ, UTA, DET
+  CBJ plays 3 games against: BOS, TB, CAR
+  PHI plays 3 games against: COL, CAR, CHI
+  COL plays 3 games against: PHI, WAS, FLA
+  MON plays 2 games against: EDM, VEG
+  EDM plays 4 games against: MON, OTT, MIN, NYR
+  DAL plays 3 games against: ANA, SJ, TB
+  ANA plays 3 games against: DAL, CHI, BUF
+  UTA plays 4 games against: WAS, BOS, PIT, TOR
+  WAS plays 3 games against: UTA, COL, NJ
+  SJ plays 4 games against: DET, DAL, STL, BUF
+  DET plays 3 games against: SJ, NYI, BOS
+  OTT plays 3 games against: EDM, VEG, VAN
+  PIT plays 3 games against: TB, WPG, UTA
+  TB plays 3 games against: PIT, CBJ, DAL
+  STL plays 3 games against: MIN, SJ, NYI
+  MIN plays 3 games against: STL, EDM, CGY
+  WPG plays 3 games against: FLA, PIT, NAS
+  FLA plays 3 games against: WPG, CHI, COL
+  CHI plays 3 games against: ANA, FLA, PHI
+  CGY plays 3 games against: NYI, NYR, MIN
+  NYI plays 3 games against: CGY, DET, STL
+  VAN plays 2 games against: NYR, OTT
+  NYR plays 3 games against: VAN, CGY, EDM
+  CAR plays 3 games against: PHI, NJ, CBJ
+  TOR plays 2 games against: VEG, UTA
+  VEG plays 3 games against: TOR, OTT, MON
+  SEA plays 2 games against: NAS, LA
+  NAS plays 2 games against: SEA, WPG
+  LA plays 2 games against: BUF, SEA
+  BUF plays 3 games against: LA, ANA, SJ
+  NJ plays 2 games against: CAR, WAS
+
+Week starting on 2024-11-25:
+  CAR plays 4 games against: DAL, NYR, FLA, FLA
+  DAL plays 4 games against: CAR, CHI, COL, WPG
+  NJ plays 4 games against: NAS, STL, DET, WAS
+  NAS plays 4 games against: NJ, PHI, TB, MIN
+  NYR plays 4 games against: STL, CAR, PHI, MON
+  STL plays 3 games against: NYR, NJ, PHI
+  PHI plays 4 games against: VEG, NAS, NYR, STL
+  VEG plays 4 games against: PHI, COL, WPG, UTA
+  TB plays 4 games against: COL, WAS, NAS, TOR
+  COL plays 4 games against: TB, VEG, DAL, EDM
+  FLA plays 4 games against: WAS, TOR, CAR, CAR
+  WAS plays 4 games against: FLA, TB, NYI, NJ
+  NYI plays 4 games against: DET, BOS, WAS, BUF
+  DET plays 4 games against: NYI, CGY, NJ, VAN
+  OTT plays 4 games against: CGY, SJ, LA, ANA
+  CGY plays 4 games against: OTT, DET, CBJ, PIT
+  MIN plays 4 games against: WPG, BUF, CHI, NAS
+  WPG plays 4 games against: MIN, LA, VEG, DAL
+  ANA plays 4 games against: SEA, SEA, LA, OTT
+  SEA plays 4 games against: ANA, ANA, SJ, SJ
+  SJ plays 4 games against: LA, OTT, SEA, SEA
+  LA plays 4 games against: SJ, WPG, ANA, OTT
+  BOS plays 4 games against: VAN, NYI, PIT, MON
+  VAN plays 4 games against: BOS, PIT, BUF, DET
+  MON plays 4 games against: UTA, CBJ, NYR, BOS
+  UTA plays 3 games against: MON, EDM, VEG
+  BUF plays 3 games against: MIN, VAN, NYI
+  PIT plays 3 games against: VAN, BOS, CGY
+  TOR plays 2 games against: FLA, TB
+  CBJ plays 3 games against: MON, CGY, CHI
+  CHI plays 3 games against: DAL, MIN, CBJ
+  EDM plays 2 games against: UTA, COL
+
+Week starting on 2024-12-02:
+  NYR plays 3 games against: NJ, PIT, SEA
+  NJ plays 3 games against: NYR, SEA, COL
+  TOR plays 4 games against: CHI, NAS, WAS, PIT
+  CHI plays 3 games against: TOR, BOS, WPG
+  UTA plays 3 games against: DAL, BUF, PHI
+  DAL plays 4 games against: UTA, LA, VEG, CGY
+  BOS plays 3 games against: DET, CHI, PHI
+  DET plays 3 games against: BOS, OTT, COL
+  BUF plays 3 games against: COL, WPG, UTA
+  COL plays 4 games against: BUF, CAR, DET, NJ
+  CAR plays 3 games against: SEA, COL, NYI
+  SEA plays 4 games against: CAR, NYI, NJ, NYR
+  MON plays 3 games against: NYI, NAS, WAS
+  NYI plays 4 games against: MON, SEA, CAR, OTT
+  PIT plays 3 games against: FLA, NYR, TOR
+  FLA plays 3 games against: PIT, PHI, SJ
+  WAS plays 3 games against: SJ, TOR, MON
+  SJ plays 3 games against: WAS, TB, FLA
+  WPG plays 4 games against: STL, BUF, CHI, CBJ
+  STL plays 3 games against: WPG, CGY, EDM
+  MIN plays 3 games against: VAN, ANA, LA
+  VAN plays 3 games against: MIN, CBJ, TB
+  CGY plays 3 games against: CBJ, STL, DAL
+  CBJ plays 4 games against: CGY, EDM, VAN, WPG
+  VEG plays 3 games against: EDM, ANA, DAL
+  EDM plays 3 games against: VEG, CBJ, STL
+  NAS plays 3 games against: TOR, MON, OTT
+  LA plays 2 games against: DAL, MIN
+  ANA plays 2 games against: VEG, MIN
+  OTT plays 3 games against: DET, NAS, NYI
+  PHI plays 3 games against: FLA, BOS, UTA
+  TB plays 2 games against: SJ, VAN
+
+Week starting on 2024-12-09:
+  BUF plays 4 games against: DET, NYR, WAS, TOR
+  DET plays 3 games against: BUF, PHI, TOR
+  NYR plays 4 games against: CHI, BUF, LA, STL
+  CHI plays 4 games against: NYR, NYI, NJ, NYI
+  MON plays 3 games against: ANA, PIT, WPG
+  ANA plays 4 games against: MON, OTT, TOR, CBJ
+  CAR plays 3 games against: SJ, OTT, CBJ
+  SJ plays 3 games against: CAR, STL, UTA
+  NJ plays 3 games against: TOR, LA, CHI
+  TOR plays 4 games against: NJ, ANA, DET, BUF
+  PIT plays 3 games against: COL, MON, OTT
+  COL plays 3 games against: PIT, UTA, NAS
+  CBJ plays 4 games against: PHI, WAS, ANA, CAR
+  PHI plays 3 games against: CBJ, DET, MIN
+  NYI plays 3 games against: LA, CHI, CHI
+  LA plays 3 games against: NYI, NJ, NYR
+  NAS plays 3 games against: CGY, DAL, COL
+  CGY plays 3 games against: NAS, TB, FLA
+  WPG plays 3 games against: BOS, VEG, MON
+  BOS plays 3 games against: WPG, SEA, VAN
+  EDM plays 3 games against: TB, MIN, VEG
+  TB plays 3 games against: EDM, CGY, SEA
+  UTA plays 3 games against: MIN, COL, SJ
+  MIN plays 4 games against: UTA, EDM, PHI, VEG
+  VAN plays 3 games against: STL, FLA, BOS
+  STL plays 4 games against: VAN, SJ, DAL, NYR
+  SEA plays 3 games against: FLA, BOS, TB
+  FLA plays 3 games against: SEA, VAN, CGY
+  OTT plays 3 games against: ANA, CAR, PIT
+  WAS plays 2 games against: CBJ, BUF
+  DAL plays 2 games against: NAS, STL
+  VEG plays 3 games against: WPG, EDM, MIN
+
+Week starting on 2024-12-16:
+  DAL plays 3 games against: WAS, TOR, NYR
+  WAS plays 4 games against: DAL, CHI, CAR, LA
+  EDM plays 4 games against: FLA, BOS, SJ, OTT
+  FLA plays 4 games against: EDM, MIN, STL, TB
+  VAN plays 4 games against: COL, UTA, VEG, OTT
+  COL plays 4 games against: VAN, SJ, ANA, SEA
+  CAR plays 3 games against: NYI, WAS, NYR
+  NYI plays 2 games against: CAR, TOR
+  MON plays 3 games against: BUF, DET, DET
+  BUF plays 3 games against: MON, TOR, BOS
+  PIT plays 3 games against: LA, NAS, NJ
+  LA plays 4 games against: PIT, PHI, NAS, WAS
+  TB plays 3 games against: CBJ, STL, FLA
+  CBJ plays 3 games against: TB, NJ, PHI
+  STL plays 3 games against: NJ, TB, FLA
+  NJ plays 3 games against: STL, CBJ, PIT
+  NAS plays 3 games against: NYR, PIT, LA
+  NYR plays 3 games against: NAS, DAL, CAR
+  CHI plays 3 games against: WAS, SEA, CGY
+  CGY plays 3 games against: BOS, OTT, CHI
+  BOS plays 3 games against: CGY, EDM, BUF
+  SEA plays 4 games against: OTT, CHI, VEG, COL
+  OTT plays 4 games against: SEA, CGY, VAN, EDM
+  SJ plays 3 games against: WPG, COL, EDM
+  WPG plays 3 games against: SJ, ANA, MIN
+  DET plays 3 games against: PHI, MON, MON
+  PHI plays 3 games against: DET, LA, CBJ
+  TOR plays 3 games against: DAL, BUF, NYI
+  MIN plays 3 games against: FLA, UTA, WPG
+  ANA plays 3 games against: WPG, COL, UTA
+  UTA plays 3 games against: VAN, MIN, ANA
+  VEG plays 2 games against: VAN, SEA
+
+Week starting on 2024-12-23:
+  NJ plays 3 games against: NYR, CAR, CAR
+  NYR plays 2 games against: NJ, TB
+  TOR plays 3 games against: WPG, DET, WAS
+  WPG plays 2 games against: TOR, OTT
+  BOS plays 3 games against: WAS, CBJ, CBJ
+  WAS plays 3 games against: BOS, TOR, DET
+  DET plays 3 games against: STL, TOR, WAS
+  STL plays 3 games against: DET, NAS, BUF
+  PIT plays 3 games against: PHI, NYI, NYI
+  PHI plays 3 games against: PIT, ANA, LA
+  FLA plays 2 games against: TB, MON
+  TB plays 3 games against: FLA, NYR, MON
+  CBJ plays 3 games against: MON, BOS, BOS
+  MON plays 3 games against: CBJ, FLA, TB
+  NYI plays 3 games against: BUF, PIT, PIT
+  BUF plays 3 games against: NYI, CHI, STL
+  NAS plays 2 games against: CAR, STL
+  CAR plays 3 games against: NAS, NJ, NJ
+  MIN plays 3 games against: CHI, DAL, OTT
+  CHI plays 3 games against: MIN, BUF, DAL
+  VAN plays 2 games against: SJ, SEA
+  SJ plays 3 games against: VAN, VEG, CGY
+  UTA plays 2 games against: DAL, COL
+  DAL plays 3 games against: UTA, MIN, CHI
+  VEG plays 3 games against: ANA, SJ, CGY
+  ANA plays 3 games against: VEG, PHI, EDM
+  COL plays 1 games against: UTA
+  LA plays 2 games against: EDM, PHI
+  EDM plays 2 games against: LA, ANA
+  SEA plays 1 games against: VAN
+  OTT plays 2 games against: WPG, MIN
+  CGY plays 2 games against: SJ, VEG
+
+Week starting on 2024-12-30:
+  FLA plays 3 games against: NYR, CAR, PIT
+  NYR plays 4 games against: FLA, BOS, WAS, CHI
+  WPG plays 4 games against: NAS, COL, ANA, DET
+  NAS plays 4 games against: WPG, MIN, VAN, CGY
+  SEA plays 3 games against: UTA, VAN, EDM
+  UTA plays 4 games against: SEA, EDM, CGY, DAL
+  WAS plays 3 games against: BOS, MIN, NYR
+  BOS plays 4 games against: WAS, NYR, TOR, NYI
+  TOR plays 4 games against: NYI, NYI, BOS, PHI
+  NYI plays 3 games against: TOR, TOR, BOS
+  VEG plays 3 games against: MON, PHI, BUF
+  MON plays 3 games against: VEG, CHI, COL
+  CHI plays 3 games against: STL, MON, NYR
+  STL plays 3 games against: CHI, OTT, CBJ
+  DET plays 3 games against: PIT, CBJ, WPG
+  PIT plays 3 games against: DET, FLA, CAR
+  DAL plays 3 games against: BUF, OTT, UTA
+  BUF plays 3 games against: DAL, COL, VEG
+  COL plays 3 games against: WPG, BUF, MON
+  SJ plays 3 games against: PHI, TB, NJ
+  PHI plays 3 games against: SJ, VEG, TOR
+  ANA plays 4 games against: NJ, WPG, EDM, TB
+  NJ plays 3 games against: ANA, LA, SJ
+  CBJ plays 3 games against: CAR, DET, STL
+  CAR plays 4 games against: CBJ, FLA, MIN, PIT
+  MIN plays 3 games against: NAS, WAS, CAR
+  CGY plays 3 games against: VAN, UTA, NAS
+  VAN plays 3 games against: CGY, SEA, NAS
+  EDM plays 3 games against: UTA, ANA, SEA
+  LA plays 2 games against: NJ, TB
+  OTT plays 2 games against: DAL, STL
+  TB plays 3 games against: SJ, LA, ANA
+
+Week starting on 2025-01-06:
+  BUF plays 3 games against: WAS, OTT, SEA
+  WAS plays 4 games against: BUF, VAN, MON, NAS
+  MON plays 3 games against: VAN, WAS, DAL
+  VAN plays 4 games against: MON, WAS, CAR, TOR
+  COL plays 4 games against: FLA, CHI, MIN, WPG
+  FLA plays 3 games against: COL, UTA, BOS
+  SEA plays 4 games against: NJ, CBJ, BUF, DET
+  NJ plays 3 games against: SEA, NYR, TB
+  BOS plays 3 games against: EDM, TB, FLA
+  EDM plays 3 games against: BOS, PIT, CHI
+  DET plays 3 games against: OTT, CHI, SEA
+  OTT plays 4 games against: DET, BUF, PIT, DAL
+  NYR plays 3 games against: DAL, NJ, VEG
+  DAL plays 4 games against: NYR, PHI, MON, OTT
+  PHI plays 3 games against: TOR, DAL, ANA
+  TOR plays 3 games against: PHI, CAR, VAN
+  PIT plays 4 games against: CBJ, EDM, OTT, TB
+  CBJ plays 3 games against: PIT, SEA, STL
+  WPG plays 3 games against: NAS, LA, COL
+  NAS plays 2 games against: WPG, WAS
+  MIN plays 4 games against: STL, COL, SJ, VEG
+  STL plays 3 games against: MIN, ANA, CBJ
+  ANA plays 4 games against: CGY, STL, PHI, CAR
+  CGY plays 3 games against: ANA, LA, LA
+  SJ plays 3 games against: VEG, UTA, MIN
+  VEG plays 4 games against: SJ, NYI, NYR, MIN
+  CHI plays 3 games against: COL, DET, EDM
+  UTA plays 3 games against: FLA, SJ, NYI
+  LA plays 3 games against: CGY, WPG, CGY
+  CAR plays 4 games against: TOR, VAN, ANA, TB
+  TB plays 4 games against: BOS, NJ, PIT, CAR
+  NYI plays 2 games against: VEG, UTA
+
+Week starting on 2025-01-13:
+  PHI plays 4 games against: FLA, CBJ, NYI, NJ
+  FLA plays 4 games against: PHI, NJ, DET, ANA
+  CHI plays 3 games against: CGY, NAS, VEG
+  CGY plays 4 games against: CHI, STL, STL, WPG
+  EDM plays 4 games against: LA, MIN, COL, VAN
+  LA plays 3 games against: EDM, VAN, SEA
+  BOS plays 2 games against: TB, OTT
+  TB plays 3 games against: BOS, ANA, DET
+  DET plays 4 games against: SJ, FLA, TB, DAL
+  SJ plays 3 games against: DET, CBJ, NYI
+  NJ plays 4 games against: FLA, TOR, PHI, OTT
+  PIT plays 3 games against: SEA, BUF, WAS
+  SEA plays 3 games against: PIT, WPG, LA
+  TOR plays 3 games against: DAL, NJ, MON
+  DAL plays 4 games against: TOR, MON, COL, DET
+  WAS plays 3 games against: ANA, OTT, PIT
+  ANA plays 3 games against: WAS, TB, FLA
+  CBJ plays 3 games against: PHI, SJ, NYR
+  NYI plays 3 games against: OTT, PHI, SJ
+  OTT plays 4 games against: NYI, WAS, BOS, NJ
+  STL plays 3 games against: CGY, CGY, UTA
+  NAS plays 3 games against: VEG, CHI, MIN
+  VEG plays 3 games against: NAS, CAR, CHI
+  WPG plays 3 games against: VAN, SEA, CGY
+  VAN plays 3 games against: WPG, LA, EDM
+  COL plays 3 games against: NYR, EDM, DAL
+  NYR plays 4 games against: COL, UTA, CBJ, MON
+  UTA plays 3 games against: MON, NYR, STL
+  MON plays 4 games against: UTA, DAL, TOR, NYR
+  BUF plays 2 games against: CAR, PIT
+  CAR plays 2 games against: BUF, VEG
+  MIN plays 2 games against: EDM, NAS
+
+Week starting on 2025-01-20:
+  BOS plays 4 games against: SJ, NJ, OTT, COL
+  SJ plays 4 games against: BOS, NAS, NAS, FLA
+  COL plays 4 games against: MIN, WPG, BOS, NYR
+  MIN plays 4 games against: COL, UTA, CGY, CHI
+  SEA plays 3 games against: BUF, WAS, PIT
+  BUF plays 4 games against: SEA, VAN, CGY, EDM
+  VEG plays 4 games against: STL, STL, DAL, FLA
+  STL plays 3 games against: VEG, VEG, DAL
+  NYI plays 3 games against: CBJ, PHI, CAR
+  CBJ plays 4 games against: NYI, TOR, CAR, LA
+  TOR plays 3 games against: TB, CBJ, OTT
+  TB plays 4 games against: TOR, MON, CHI, DET
+  CHI plays 3 games against: CAR, TB, MIN
+  CAR plays 4 games against: CHI, DAL, CBJ, NYI
+  UTA plays 4 games against: WPG, MIN, WPG, OTT
+  WPG plays 4 games against: UTA, COL, UTA, CGY
+  LA plays 3 games against: PIT, FLA, CBJ
+  PIT plays 3 games against: LA, ANA, SEA
+  MON plays 3 games against: TB, DET, NJ
+  NYR plays 3 games against: OTT, PHI, COL
+  OTT plays 4 games against: NYR, BOS, TOR, UTA
+  PHI plays 3 games against: DET, NYR, NYI
+  DET plays 3 games against: PHI, MON, TB
+  DAL plays 3 games against: CAR, VEG, STL
+  NAS plays 3 games against: SJ, SJ, ANA
+  EDM plays 3 games against: WAS, VAN, BUF
+  WAS plays 3 games against: EDM, SEA, VAN
+  VAN plays 3 games against: BUF, EDM, WAS
+  ANA plays 3 games against: FLA, PIT, NAS
+  FLA plays 4 games against: ANA, LA, SJ, VEG
+  NJ plays 2 games against: BOS, MON
+  CGY plays 3 games against: BUF, MIN, WPG
+
+Week starting on 2025-01-27:
+  DET plays 4 games against: LA, EDM, CGY, VAN
+  LA plays 4 games against: DET, FLA, TB, CAR
+  PHI plays 4 games against: NJ, NJ, NYI, COL
+  NJ plays 3 games against: PHI, PHI, BUF
+  STL plays 3 games against: VAN, COL, UTA
+  VAN plays 4 games against: STL, NAS, DAL, DET
+  EDM plays 3 games against: SEA, DET, TOR
+  SEA plays 4 games against: EDM, ANA, SJ, CGY
+  SJ plays 2 games against: PIT, SEA
+  PIT plays 3 games against: SJ, UTA, NAS
+  BUF plays 3 games against: BOS, NAS, NJ
+  BOS plays 3 games against: BUF, WPG, NYR
+  MON plays 3 games against: WPG, MIN, ANA
+  WPG plays 3 games against: MON, BOS, WAS
+  NYR plays 3 games against: CAR, BOS, VEG
+  CAR plays 3 games against: NYR, CHI, LA
+  TB plays 3 games against: CHI, LA, NYI
+  CHI plays 3 games against: TB, CAR, FLA
+  NYI plays 4 games against: COL, PHI, TB, FLA
+  COL plays 3 games against: NYI, STL, PHI
+  CGY plays 4 games against: WAS, ANA, DET, SEA
+  WAS plays 3 games against: CGY, OTT, WPG
+  VEG plays 3 games against: DAL, CBJ, NYR
+  DAL plays 3 games against: VEG, VAN, CBJ
+  ANA plays 3 games against: SEA, CGY, MON
+  TOR plays 2 games against: MIN, EDM
+  MIN plays 3 games against: TOR, MON, OTT
+  FLA plays 3 games against: LA, CHI, NYI
+  NAS plays 3 games against: VAN, BUF, PIT
+  UTA plays 3 games against: PIT, CBJ, STL
+  OTT plays 2 games against: WAS, MIN
+  CBJ plays 3 games against: VEG, UTA, DAL
+
+Week starting on 2025-02-03:
+  NAS plays 3 games against: OTT, CHI, BUF
+  OTT plays 4 games against: NAS, TB, TB, FLA
+  BOS plays 3 games against: MIN, NYR, VEG
+  MIN plays 3 games against: BOS, CAR, NYI
+  BUF plays 2 games against: CBJ, NAS
+  CBJ plays 3 games against: BUF, UTA, NYR
+  PIT plays 3 games against: NJ, NYR, PHI
+  NJ plays 3 games against: PIT, VEG, MON
+  TB plays 4 games against: OTT, OTT, DET, MON
+  WAS plays 3 games against: FLA, PHI, UTA
+  FLA plays 3 games against: WAS, STL, OTT
+  NYI plays 3 games against: VEG, WPG, MIN
+  VEG plays 3 games against: NYI, NJ, BOS
+  STL plays 3 games against: EDM, FLA, CHI
+  EDM plays 3 games against: STL, CHI, COL
+  WPG plays 2 games against: CAR, NYI
+  CAR plays 3 games against: WPG, MIN, UTA
+  CGY plays 3 games against: TOR, COL, SEA
+  TOR plays 3 games against: CGY, SEA, VAN
+  UTA plays 4 games against: PHI, CBJ, CAR, WAS
+  PHI plays 3 games against: UTA, WAS, PIT
+  VAN plays 3 games against: COL, SJ, TOR
+  COL plays 3 games against: VAN, CGY, EDM
+  ANA plays 2 games against: DAL, LA
+  DAL plays 3 games against: ANA, LA, SJ
+  SEA plays 3 games against: DET, TOR, CGY
+  DET plays 2 games against: SEA, TB
+  SJ plays 3 games against: MON, VAN, DAL
+  MON plays 4 games against: SJ, LA, NJ, TB
+  NYR plays 3 games against: BOS, PIT, CBJ
+  CHI plays 3 games against: EDM, NAS, STL
+  LA plays 3 games against: MON, DAL, ANA
+
+Week starting on 2025-02-17:
+  PHI plays 1 games against: EDM
+  EDM plays 2 games against: PHI, WAS
+  PIT plays 2 games against: WAS, NYR
+  WAS plays 2 games against: PIT, EDM
+  DET plays 2 games against: MIN, ANA
+  MIN plays 1 games against: DET
+  BUF plays 1 games against: NYR
+  NYR plays 2 games against: BUF, PIT
+  NJ plays 2 games against: DAL, NAS
+  DAL plays 2 games against: NJ, NYI
+  FLA plays 1 games against: SEA
+  SEA plays 2 games against: FLA, TB
+  NAS plays 2 games against: COL, NJ
+  COL plays 2 games against: NAS, STL
+  BOS plays 1 games against: ANA
+  ANA plays 2 games against: BOS, DET
+  OTT plays 1 games against: MON
+  MON plays 1 games against: OTT
+  STL plays 2 games against: WPG, COL
+  WPG plays 1 games against: STL
+  TOR plays 2 games against: CAR, CHI
+  CAR plays 1 games against: TOR
+  CBJ plays 1 games against: CHI
+  CHI plays 2 games against: CBJ, TOR
+  LA plays 1 games against: UTA
+  UTA plays 2 games against: LA, VAN
+  VEG plays 1 games against: VAN
+  VAN plays 2 games against: VEG, UTA
+  TB plays 1 games against: SEA
+  NYI plays 1 games against: DAL
+  CGY plays 1 games against: SJ
+  SJ plays 1 games against: CGY
+
+Week starting on 2025-02-24:
+  WPG plays 4 games against: SJ, OTT, NAS, PHI
+  SJ plays 3 games against: WPG, MON, OTT
+  LA plays 4 games against: VEG, VAN, DAL, STL
+  VEG plays 3 games against: LA, CHI, NJ
+  BOS plays 4 games against: TOR, NYI, PIT, MIN
+  TOR plays 3 games against: BOS, NYR, PIT
+  BUF plays 3 games against: ANA, CAR, MON
+  ANA plays 3 games against: BUF, VAN, CHI
+  MON plays 3 games against: CAR, SJ, BUF
+  CAR plays 4 games against: MON, BUF, EDM, CGY
+  PHI plays 3 games against: PIT, PIT, WPG
+  PIT plays 4 games against: PHI, PHI, BOS, TOR
+  TB plays 3 games against: EDM, CGY, WAS
+  EDM plays 3 games against: TB, FLA, CAR
+  WAS plays 3 games against: CGY, STL, TB
+  CGY plays 4 games against: WAS, TB, FLA, CAR
+  CBJ plays 3 games against: DAL, DET, DET
+  DAL plays 3 games against: CBJ, LA, STL
+  NYI plays 3 games against: NYR, BOS, NAS
+  NYR plays 3 games against: NYI, TOR, NAS
+  STL plays 4 games against: SEA, WAS, LA, DAL
+  SEA plays 2 games against: STL, VAN
+  NAS plays 4 games against: FLA, WPG, NYI, NYR
+  FLA plays 3 games against: NAS, EDM, CGY
+  MIN plays 4 games against: DET, UTA, COL, BOS
+  DET plays 3 games against: MIN, CBJ, CBJ
+  UTA plays 3 games against: CHI, MIN, NJ
+  CHI plays 3 games against: UTA, VEG, ANA
+  OTT plays 2 games against: WPG, SJ
+  COL plays 2 games against: NJ, MIN
+  NJ plays 3 games against: COL, UTA, VEG
+  VAN plays 3 games against: LA, ANA, SEA
+
+Week starting on 2025-03-03:
+  WAS plays 4 games against: OTT, NYR, DET, SEA
+  OTT plays 3 games against: WAS, CHI, NYR
+  MON plays 3 games against: BUF, EDM, CGY
+  BUF plays 4 games against: MON, SJ, TB, FLA
+  NYR plays 4 games against: NYI, WAS, OTT, CBJ
+  NYI plays 4 games against: NYR, WPG, SJ, ANA
+  FLA plays 3 games against: TB, CBJ, BUF
+  TB plays 4 games against: FLA, CBJ, BUF, BOS
+  TOR plays 3 games against: SJ, VEG, COL
+  SJ plays 4 games against: TOR, BUF, COL, NYI
+  CHI plays 4 games against: LA, OTT, UTA, NAS
+  LA plays 4 games against: CHI, STL, STL, VEG
+  BOS plays 3 games against: NAS, CAR, TB
+  NAS plays 3 games against: BOS, SEA, CHI
+  DET plays 3 games against: CAR, UTA, WAS
+  CAR plays 3 games against: DET, BOS, WPG
+  PHI plays 4 games against: CGY, WPG, SEA, NJ
+  CGY plays 3 games against: PHI, DAL, MON
+  CBJ plays 3 games against: TB, FLA, NYR
+  WPG plays 4 games against: NYI, PHI, NJ, CAR
+  DAL plays 4 games against: NJ, CGY, EDM, VAN
+  NJ plays 3 games against: DAL, WPG, PHI
+  EDM plays 3 games against: ANA, MON, DAL
+  ANA plays 4 games against: EDM, VAN, STL, NYI
+  COL plays 3 games against: PIT, SJ, TOR
+  PIT plays 3 games against: COL, VEG, MIN
+  SEA plays 4 games against: MIN, NAS, PHI, WAS
+  MIN plays 3 games against: SEA, VAN, PIT
+  VEG plays 3 games against: TOR, PIT, LA
+  STL plays 3 games against: LA, ANA, LA
+  VAN plays 3 games against: ANA, MIN, DAL
+  UTA plays 2 games against: DET, CHI
+
+Week starting on 2025-03-10:
+  BUF plays 3 games against: EDM, DET, VEG
+  EDM plays 4 games against: BUF, NJ, NYI, NYR
+  OTT plays 4 games against: DET, PHI, BOS, TOR
+  DET plays 4 games against: OTT, BUF, CAR, VEG
+  COL plays 4 games against: CHI, MIN, CGY, DAL
+  CHI plays 3 games against: COL, SJ, VAN
+  UTA plays 4 games against: TOR, ANA, SEA, VAN
+  TOR plays 3 games against: UTA, FLA, OTT
+  BOS plays 3 games against: FLA, OTT, TB
+  FLA plays 4 games against: BOS, TOR, MON, NYI
+  CAR plays 3 games against: TB, DET, PHI
+  TB plays 3 games against: CAR, PHI, BOS
+  NJ plays 3 games against: CBJ, EDM, PIT
+  CBJ plays 3 games against: NJ, VEG, NYR
+  PHI plays 3 games against: OTT, TB, CAR
+  PIT plays 3 games against: VEG, STL, NJ
+  VEG plays 4 games against: PIT, CBJ, BUF, DET
+  WPG plays 3 games against: NYR, DAL, SEA
+  NYR plays 4 games against: WPG, MIN, CBJ, EDM
+  MIN plays 3 games against: COL, NYR, STL
+  VAN plays 4 games against: MON, CGY, CHI, UTA
+  MON plays 3 games against: VAN, SEA, FLA
+  ANA plays 4 games against: WAS, UTA, NAS, STL
+  WAS plays 3 games against: ANA, LA, SJ
+  LA plays 3 games against: NYI, WAS, NAS
+  NYI plays 3 games against: LA, EDM, FLA
+  SJ plays 3 games against: NAS, CHI, WAS
+  NAS plays 3 games against: SJ, ANA, LA
+  CGY plays 2 games against: VAN, COL
+  SEA plays 3 games against: MON, UTA, WPG
+  STL plays 3 games against: PIT, MIN, ANA
+  DAL plays 2 games against: WPG, COL
+
+Week starting on 2025-03-17:
+  BOS plays 4 games against: BUF, VEG, SJ, LA
+  BUF plays 4 games against: BOS, UTA, MIN, WPG
+  TB plays 4 games against: PHI, DAL, UTA, VEG
+  PHI plays 4 games against: TB, WAS, DAL, CHI
+  CBJ plays 3 games against: NJ, FLA, PIT
+  NJ plays 3 games against: CBJ, CGY, OTT
+  TOR plays 4 games against: CGY, COL, NYR, NAS
+  CGY plays 4 games against: TOR, NYR, NJ, NYI
+  MIN plays 3 games against: LA, SEA, BUF
+  LA plays 4 games against: MIN, CHI, CAR, BOS
+  MON plays 3 games against: OTT, NYI, COL
+  OTT plays 3 games against: MON, COL, NJ
+  NYR plays 3 games against: CGY, TOR, VAN
+  PIT plays 3 games against: NYI, CBJ, FLA
+  NYI plays 3 games against: PIT, MON, CGY
+  WAS plays 3 games against: DET, PHI, FLA
+  DET plays 2 games against: WAS, VEG
+  DAL plays 3 games against: ANA, TB, PHI
+  ANA plays 3 games against: DAL, NAS, CAR
+  NAS plays 4 games against: STL, ANA, TOR, STL
+  STL plays 4 games against: NAS, VAN, CHI, NAS
+  CHI plays 4 games against: SEA, LA, STL, PHI
+  SEA plays 3 games against: CHI, MIN, EDM
+  EDM plays 3 games against: UTA, WPG, SEA
+  UTA plays 3 games against: EDM, BUF, TB
+  VAN plays 3 games against: WPG, STL, NYR
+  WPG plays 3 games against: VAN, EDM, BUF
+  COL plays 3 games against: TOR, OTT, MON
+  FLA plays 3 games against: CBJ, WAS, PIT
+  VEG plays 3 games against: BOS, DET, TB
+  SJ plays 2 games against: CAR, BOS
+  CAR plays 3 games against: SJ, LA, ANA
+
+Week starting on 2025-03-24:
+  NJ plays 4 games against: VAN, CHI, WPG, MIN
+  VAN plays 4 games against: NJ, NYI, CBJ, WPG
+  NYI plays 4 games against: CBJ, VAN, TB, CAR
+  CBJ plays 3 games against: NYI, VAN, OTT
+  DAL plays 4 games against: MIN, EDM, CGY, SEA
+  MIN plays 4 games against: DAL, VEG, WAS, NJ
+  UTA plays 4 games against: DET, TB, FLA, CHI
+  DET plays 4 games against: UTA, COL, OTT, BOS
+  BUF plays 4 games against: OTT, PIT, PHI, WAS
+  OTT plays 4 games against: BUF, DET, CBJ, PIT
+  CAR plays 3 games against: NAS, MON, NYI
+  NAS plays 3 games against: CAR, STL, VEG
+  TB plays 3 games against: PIT, UTA, NYI
+  PIT plays 3 games against: TB, BUF, OTT
+  TOR plays 4 games against: PHI, SJ, LA, ANA
+  PHI plays 3 games against: TOR, MON, BUF
+  STL plays 3 games against: MON, NAS, COL
+  MON plays 4 games against: STL, PHI, CAR, FLA
+  WPG plays 3 games against: WAS, NJ, VAN
+  WAS plays 3 games against: WPG, MIN, BUF
+  VEG plays 3 games against: MIN, CHI, NAS
+  CGY plays 3 games against: SEA, DAL, EDM
+  SEA plays 3 games against: CGY, EDM, DAL
+  COL plays 3 games against: DET, LA, STL
+  LA plays 4 games against: NYR, COL, TOR, SJ
+  NYR plays 3 games against: LA, ANA, SJ
+  CHI plays 3 games against: NJ, VEG, UTA
+  EDM plays 3 games against: DAL, SEA, CGY
+  ANA plays 3 games against: BOS, NYR, TOR
+  BOS plays 2 games against: ANA, DET
+  SJ plays 3 games against: TOR, NYR, LA
+  FLA plays 2 games against: UTA, MON
+
+Week starting on 2025-03-31:
+  NJ plays 2 games against: MIN, NYR
+  MIN plays 4 games against: NJ, NYR, NYI, DAL
+  PHI plays 2 games against: NAS, MON
+  NAS plays 4 games against: PHI, CBJ, DAL, MON
+  COL plays 4 games against: CGY, CHI, CBJ, STL
+  CGY plays 4 games against: COL, UTA, ANA, VEG
+  SEA plays 3 games against: DAL, VAN, SJ
+  DAL plays 4 games against: SEA, NAS, PIT, MIN
+  BOS plays 4 games against: WAS, MON, CAR, BUF
+  WAS plays 4 games against: BOS, CAR, CHI, NYI
+  MON plays 4 games against: FLA, BOS, PHI, NAS
+  FLA plays 4 games against: MON, TOR, OTT, DET
+  OTT plays 4 games against: BUF, TB, FLA, CBJ
+  BUF plays 3 games against: OTT, TB, BOS
+  CBJ plays 4 games against: NAS, COL, TOR, OTT
+  NYI plays 3 games against: TB, MIN, WAS
+  TB plays 3 games against: NYI, OTT, BUF
+  STL plays 3 games against: DET, PIT, COL
+  DET plays 3 games against: STL, CAR, FLA
+  UTA plays 3 games against: CGY, LA, WPG
+  ANA plays 3 games against: SJ, CGY, VAN
+  SJ plays 3 games against: ANA, EDM, SEA
+  VEG plays 4 games against: EDM, WPG, CGY, VAN
+  EDM plays 3 games against: VEG, SJ, LA
+  LA plays 3 games against: WPG, UTA, EDM
+  WPG plays 3 games against: LA, VEG, UTA
+  CAR plays 3 games against: WAS, DET, BOS
+  NYR plays 2 games against: MIN, NJ
+  TOR plays 2 games against: FLA, CBJ
+  CHI plays 3 games against: COL, WAS, PIT
+  VAN plays 3 games against: SEA, ANA, VEG
+  PIT plays 3 games against: STL, DAL, CHI
+
+Week starting on 2025-04-07:
+  NYR plays 4 games against: TB, PHI, NYI, CAR
+  TB plays 4 games against: NYR, TOR, DET, BUF
+  WPG plays 4 games against: STL, DAL, CHI, EDM
+  STL plays 3 games against: WPG, EDM, SEA
+  LA plays 3 games against: SEA, ANA, COL
+  SEA plays 4 games against: LA, UTA, VEG, STL
+  SJ plays 4 games against: CGY, MIN, EDM, CGY
+  CGY plays 4 games against: SJ, ANA, MIN, SJ
+  ANA plays 4 games against: EDM, CGY, LA, COL
+  EDM plays 4 games against: ANA, STL, SJ, WPG
+  BUF plays 4 games against: CAR, CBJ, FLA, TB
+  CAR plays 4 games against: BUF, WAS, NYR, TOR
+  MON plays 3 games against: DET, OTT, TOR
+  DET plays 3 games against: MON, FLA, TB
+  NJ plays 3 games against: BOS, PIT, NYI
+  BOS plays 3 games against: NJ, CHI, PIT
+  FLA plays 3 games against: TOR, DET, BUF
+  TOR plays 4 games against: FLA, TB, MON, CAR
+  CBJ plays 4 games against: OTT, BUF, WAS, WAS
+  OTT plays 3 games against: CBJ, MON, PHI
+  PIT plays 3 games against: CHI, NJ, BOS
+  CHI plays 3 games against: PIT, BOS, WPG
+  DAL plays 3 games against: VAN, WPG, UTA
+  VAN plays 3 games against: DAL, COL, MIN
+  NAS plays 3 games against: NYI, UTA, VEG
+  NYI plays 4 games against: NAS, NYR, PHI, NJ
+  UTA plays 3 games against: SEA, NAS, DAL
+  COL plays 4 games against: VEG, VAN, LA, ANA
+  VEG plays 3 games against: COL, SEA, NAS
+  PHI plays 3 games against: NYR, NYI, OTT
+  MIN plays 3 games against: SJ, CGY, VAN
+  WAS plays 3 games against: CAR, CBJ, CBJ
+
+Week starting on 2025-04-14:
+  DET plays 3 games against: DAL, NJ, TOR
+  DAL plays 2 games against: DET, NAS
+  MON plays 2 games against: CHI, CAR
+  CHI plays 2 games against: MON, OTT
+  FLA plays 2 games against: NYR, TB
+  NYR plays 2 games against: FLA, TB
+  NAS plays 2 games against: UTA, DAL
+  UTA plays 2 games against: NAS, STL
+  EDM plays 2 games against: LA, SJ
+  LA plays 2 games against: EDM, SEA
+  VAN plays 2 games against: SJ, VEG
+  SJ plays 2 games against: VAN, EDM
+  BOS plays 1 games against: NJ
+  NJ plays 2 games against: BOS, DET
+  BUF plays 2 games against: TOR, PHI
+  TOR plays 2 games against: BUF, DET
+  OTT plays 2 games against: CHI, CAR
+  PHI plays 2 games against: CBJ, BUF
+  CBJ plays 2 games against: PHI, NYI
+  TB plays 2 games against: FLA, NYR
+  NYI plays 2 games against: WAS, CBJ
+  WAS plays 2 games against: NYI, PIT
+  STL plays 1 games against: UTA
+  MIN plays 1 games against: ANA
+  ANA plays 2 games against: MIN, WPG
+  CGY plays 1 games against: VEG
+  VEG plays 2 games against: CGY, VAN
+  SEA plays 1 games against: LA
+  CAR plays 2 games against: MON, OTT
+  WPG plays 1 games against: ANA
+  PIT plays 1 games against: WAS
