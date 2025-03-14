@@ -11,7 +11,7 @@ const server = new ApolloServer({
     typeDefs,
     resolvers,
     introspection: true, // Required for Apollo Studio
-    playground: false, // Disable built-in playground in favor of Apollo Studio
+    playground: true, // Disable built-in playground in favor of Apollo Studio
 });
 
 // Export the handler
