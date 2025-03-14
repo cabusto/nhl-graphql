@@ -1,9 +1,10 @@
-const { ApolloServer, gql } = require('apollo-server');
+const { ApolloServer } = require('@apollo/server');
+const { startStandaloneServer } = require('@apollo/server/standalone');
 const fs = require('fs');
 const path = require('path');
 
 // Define your type definitions (schema)
-const typeDefs = gql`
+const typeDefs = `
   type Game {
     GameID: Int
     Season: Int
@@ -47,8 +48,6 @@ const typeDefs = gql`
     weeklyGameCount(weekNumber: Int!, year: Int): [TeamGameCount]
   }
 `;
-
-
 
 // ✅ URL of your hosted JSON file on GitHub
 const JSON_URL = "https://raw.githubusercontent.com/cabusto/nhl-graphql/refs/heads/main/raw.json";
@@ -112,7 +111,7 @@ const resolvers = {
         const gameDate = new Date(game.Day);
         const isWithinDateRange = gameDate >= start && gameDate <= end;
 
-        // Fixed team filtering logic
+        // Team filtering logic
         const isTeamMatch = !team ||
           game.HomeTeam.Name === team ||
           game.AwayTeam.Name === team;
@@ -180,46 +179,38 @@ const resolvers = {
       const teamGameCounts = {};
 
       weeklyGames.forEach(game => {
-        // Debug: log the first game object to see its structure
-        if (weeklyGames.indexOf(game) === 0) {
-          console.log('Sample game object structure:', JSON.stringify(game, null, 2));
-        }
-
         // Use safer access with optional chaining and fallbacks
         const homeTeam = game.HomeTeam?.Name || game.HomeTeam || 'Unknown Home Team';
         const awayTeam = game.AwayTeam?.Name || game.AwayTeam || 'Unknown Away Team';
-
-        console.log(`Processing game: Home team=${homeTeam}, Away team=${awayTeam}`);
 
         teamGameCounts[homeTeam] = (teamGameCounts[homeTeam] || 0) + 1;
         teamGameCounts[awayTeam] = (teamGameCounts[awayTeam] || 0) + 1;
       });
 
-      // Debug the teamGameCounts object
-      console.log('Team game counts object:', JSON.stringify(teamGameCounts, null, 2));
-
       // Convert to array of objects and sort by game count descending
-      const result = Object.keys(teamGameCounts).map(teamName => {
-        const count = teamGameCounts[teamName];
-        console.log(`Creating result for team ${teamName} with count ${count}`);
-
-        return {
-          teamName,
-          gameCount: count
-        };
-      }).sort((a, b) => b.gameCount - a.gameCount);
-
-      // Debug the final result
-      console.log('Final result array:', JSON.stringify(result, null, 2));
+      const result = Object.keys(teamGameCounts).map(teamName => ({
+        teamName,
+        gameCount: teamGameCounts[teamName]
+      })).sort((a, b) => b.gameCount - a.gameCount);
 
       return result;
     }
   },
   Game: {
     HomeTeam: (game) => {
+      // If game.HomeTeam is already an object with Name property, return as is
+      if (game.HomeTeam && typeof game.HomeTeam === 'object' && game.HomeTeam.Name) {
+        return game.HomeTeam;
+      }
+      // Otherwise create a Team object
       return { TeamID: game.HomeTeamID, Name: game.HomeTeam };
     },
     AwayTeam: (game) => {
+      // If game.AwayTeam is already an object with Name property, return as is
+      if (game.AwayTeam && typeof game.AwayTeam === 'object' && game.AwayTeam.Name) {
+        return game.AwayTeam;
+      }
+      // Otherwise create a Team object
       return { TeamID: game.AwayTeamID, Name: game.AwayTeam };
     }
   }
@@ -229,12 +220,25 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  introspection: process.env.NODE_ENV !== 'production',
-  playground: process.env.NODE_ENV !== 'production'
+  introspection: true,
 });
 
-// Start the server
-const port = process.env.PORT || 4000;
-server.listen(port).then(({ url }) => {
-  console.log(`🚀 Server ready at ${url}`);
-});
+// For Vercel deployment
+async function startServer() {
+  if (process.env.NODE_ENV === 'production') {
+    // Export for serverless
+    return server;
+  } else {
+    // For local development
+    const { url } = await startStandaloneServer(server, {
+      listen: { port: process.env.PORT || 4000 }
+    });
+    console.log(`🚀 Server ready at ${url}`);
+  }
+}
+
+// Start the server in development or export for production
+startServer();
+
+// Export for serverless environments like Vercel
+module.exports = server;
