@@ -8,8 +8,12 @@
   },
   "routes": [
     {
-      "src": "/graphql",
+      "src": "/api/graphql",
       "dest": "/api/graphql"
+    },
+    {
+      "src": "/",
+      "dest": "/api/index"
     }
   ]
 }

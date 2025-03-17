@@ -49,7 +49,7 @@ const typeDefs = `
   }
 `;
 
-// ✅ URL of your hosted JSON file on GitHub
+// URL of your hosted JSON file on GitHub
 const JSON_URL = "https://raw.githubusercontent.com/cabusto/nhl-graphql/refs/heads/main/raw.json";
 // Cache for JSON data
 let gamesCache = null;
@@ -216,43 +216,26 @@ const resolvers = {
   }
 };
 
-// Create an Apollo Server instance
-const server = new ApolloServer({
-  typeDefs,
-  resolvers,
-  introspection: true, // Must be enabled for Studio
-  cors: {
-    origin: '*', // For development; consider restricting in production
-    credentials: true
-  }
-});
-
-// For Vercel deployment
-async function startServer() {
-  if (process.env.NODE_ENV === 'production') {
-    // Export for serverless
-    return server;
-  } else {
-    // For local development
-    const { url } = await startStandaloneServer(server, {
-      listen: { port: process.env.PORT || 4000 }
-    });
-    console.log(`🚀 Server ready at ${url}`);
-  }
-}
-
-// Start the server in development or export for production
-startServer();
-
-// Export for serverless environments like Vercel
+// Export for reuse in API routes
 module.exports = {
   typeDefs,
   resolvers,
-  server,
   getGames
 };
 
-// Keep the startServer function for local development
-if (process.env.NODE_ENV !== 'production') {
-  startServer();
+// Only create and start server if this file is run directly (not imported)
+if (require.main === module) {
+  // Create an Apollo Server instance for local development only
+  const server = new ApolloServer({
+    typeDefs,
+    resolvers,
+    introspection: true,
+  });
+
+  // Start standalone server for local development
+  startStandaloneServer(server, {
+    listen: { port: process.env.PORT || 4000 }
+  }).then(({ url }) => {
+    console.log(`🚀 Server ready at ${url}`);
+  });
 }

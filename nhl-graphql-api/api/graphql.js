@@ -1,24 +1,20 @@
 const { ApolloServer } = require('@apollo/server');
 const { startServerAndCreateNextHandler } = require('@as-integrations/next');
-const fs = require('fs');
-const path = require('path');
+const { ApolloServerPluginLandingPageLocalDefault } = require('@apollo/server/plugin/landingPage/default');
+const { typeDefs, resolvers } = require('../index');
 
-// Import your schema and resolvers
-const { typeDefs, resolvers, getGames } = require('../index.js'); // Adjust if needed
-
-// Create Apollo Server
+// Create a new Apollo Server instance for the API route
 const server = new ApolloServer({
     typeDefs,
     resolvers,
-    introspection: true, // Required for Apollo Studio
-    playground: true, // Disable built-in playground in favor of Apollo Studio
+    introspection: true,
+    plugins: [
+        ApolloServerPluginLandingPageLocalDefault({
+            embed: true,
+            includeCookies: true
+        })
+    ]
 });
 
-// Export the handler
-module.exports = startServerAndCreateNextHandler(server, {
-    context: async (req, res) => ({
-        req,
-        res,
-        // Add any context you might need
-    })
-});
+// Export the Next.js API handler
+module.exports = startServerAndCreateNextHandler(server);
