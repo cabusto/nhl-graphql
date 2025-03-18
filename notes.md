@@ -3,6 +3,7 @@
 ## APIs used
 https://sportsdata.io/developers
 https://sportwise.rolling-insights.com/app
+https://github.com/Zmalski/NHL-API-Reference
 
 ## Goals:
 
