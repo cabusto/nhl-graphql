@@ -2,7 +2,7 @@ name: Update JSON Daily
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs every day at midnight UTC
+    - cron: "30 7 * * *" # Runs every day at 7:30 AM UTC
 
 jobs:
   update-json:
