@@ -45,6 +45,7 @@ const typeDefs = `
     gamesByDateRange(startDate: String!, endDate: String!, team: String): [Game]
     team(name: String!): Team
     todaysGames: [Game]
+    yesterdayGames: [Game]
     weeklyGameCount(weekNumber: Int!, year: Int): [TeamGameCount]
   }
 `;
@@ -147,6 +148,19 @@ const resolvers = {
         const gameDate = new Date(game.Day);
         const gameDateString = gameDate.toISOString().split('T')[0];
         return gameDateString === todayString;
+      });
+    },
+    yesterdayGames: async () => {
+      const games = await getGames();
+      const today = new Date();
+      const yesterday = new Date(today);
+      yesterday.setDate(today.getDate() - 1);
+      const yesterdayString = yesterday.toISOString().split('T')[0]; // Format: YYYY-MM-DD
+
+      return games.filter(game => {
+        const gameDate = new Date(game.Day);
+        const gameDateString = gameDate.toISOString().split('T')[0];
+        return gameDateString === yesterdayString;
       });
     },
     weeklyGameCount: async (_, { weekNumber, year }) => {
