@@ -34,9 +34,16 @@ const typeDefs = `
     Name: String
   }
 
+  type GameOpponent {
+    opponent: String
+    gameDate: String
+  }
+
   type TeamGameCount {
     teamName: String
     gameCount: Int
+    homeGames: [GameOpponent]
+    awayGames: [GameOpponent]
   }
 
   type Query {
@@ -189,23 +196,51 @@ const resolvers = {
         return gameDate >= startDate && gameDate <= endDate;
       });
 
-      // Count games per team
-      const teamGameCounts = {};
+      // Initialize team data structure
+      const teamData = {};
 
       weeklyGames.forEach(game => {
-        // Use safer access with optional chaining and fallbacks
+        // Get team names with fallbacks
         const homeTeam = game.HomeTeam?.Name || game.HomeTeam || 'Unknown Home Team';
         const awayTeam = game.AwayTeam?.Name || game.AwayTeam || 'Unknown Away Team';
+        const gameDate = new Date(game.Day).toISOString().split('T')[0];
 
-        teamGameCounts[homeTeam] = (teamGameCounts[homeTeam] || 0) + 1;
-        teamGameCounts[awayTeam] = (teamGameCounts[awayTeam] || 0) + 1;
+        // Initialize team objects if they don't exist
+        if (!teamData[homeTeam]) {
+          teamData[homeTeam] = {
+            teamName: homeTeam,
+            gameCount: 0,
+            homeGames: [],
+            awayGames: []
+          };
+        }
+
+        if (!teamData[awayTeam]) {
+          teamData[awayTeam] = {
+            teamName: awayTeam,
+            gameCount: 0,
+            homeGames: [],
+            awayGames: []
+          };
+        }
+
+        // Update counters and add game details
+        teamData[homeTeam].gameCount += 1;
+        teamData[homeTeam].homeGames.push({
+          opponent: awayTeam,
+          gameDate: gameDate
+        });
+
+        teamData[awayTeam].gameCount += 1;
+        teamData[awayTeam].awayGames.push({
+          opponent: homeTeam,
+          gameDate: gameDate
+        });
       });
 
-      // Convert to array of objects and sort by game count descending
-      const result = Object.keys(teamGameCounts).map(teamName => ({
-        teamName,
-        gameCount: teamGameCounts[teamName]
-      })).sort((a, b) => b.gameCount - a.gameCount);
+      // Convert to array and sort by total game count descending
+      const result = Object.values(teamData)
+        .sort((a, b) => b.gameCount - a.gameCount);
 
       return result;
     }
