@@ -2,7 +2,7 @@ const { ApolloServer } = require('@apollo/server');
 const { startServerAndCreateNextHandler } = require('@as-integrations/next');
 const { ApolloServerPluginLandingPageLocalDefault } = require('@apollo/server/plugin/landingPage/default');
 const { typeDefs, resolvers } = require('../index');
-const { getCustomerByApiKey } = require('../auth');
+const { getCustomerByApiKey, checkRateLimit } = require('../auth');
 
 // Create a new Apollo Server instance for the API route
 const server = new ApolloServer({
