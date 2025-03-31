@@ -2,6 +2,7 @@ const { ApolloServer } = require('@apollo/server');
 const { startStandaloneServer } = require('@apollo/server/standalone');
 const fs = require('fs');
 const path = require('path');
+const { getCustomerByApiKey, checkRateLimit } = require('./auth.js');
 
 // Define your type definitions (schema)
 const typeDefs = `
@@ -274,6 +275,8 @@ module.exports = {
 
 // Only create and start server if this file is run directly (not imported)
 if (require.main === module) {
+  const { getCustomerByApiKey } = require('./auth');
+
   // Create an Apollo Server instance for local development only
   const server = new ApolloServer({
     typeDefs,
@@ -283,6 +286,34 @@ if (require.main === module) {
 
   // Start standalone server for local development
   startStandaloneServer(server, {
+    context: async ({ req }) => {
+      // For local development, allow requests without API key
+      const apiKey = req.headers.authorization?.replace(/bearer\s+/i, '') || '';
+
+      // In development, allow access without API key for testing
+      if (process.env.NODE_ENV === 'development' && !apiKey) {
+        return { customer: { name: 'Developer', plan: 'unlimited' } };
+      }
+
+      // Otherwise verify the API key
+      if (!apiKey) {
+        throw new Error('API key is required');
+      }
+
+      const customer = await getCustomerByApiKey(apiKey);
+
+      if (!customer) {
+        throw new Error('Invalid API key');
+      }
+
+      // Check rate limits
+      const withinLimits = await checkRateLimit(customer);
+      if (!withinLimits) {
+        throw new Error('Rate limit exceeded for your plan');
+      }
+
+      return { customer, apiKey };
+    },
     listen: { port: process.env.PORT || 4000 }
   }).then(({ url }) => {
     console.log(`🚀 Server ready at ${url}`);
