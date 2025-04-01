@@ -38,7 +38,8 @@ async function getCustomerByApiKey(apiKey) {
             timeoutPromise
         ]);
 
-        console.log('Firestore query completed');
+        console.log('Firestore query completed', docRef.id);
+        console.log('Document reference:', docRef);
         console.log('Document exists?', doc.exists);
 
         if (!doc.exists) {
