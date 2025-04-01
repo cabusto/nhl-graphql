@@ -21,6 +21,7 @@ const server = new ApolloServer({
 module.exports = startServerAndCreateNextHandler(server, {
     context: async (req) => {
         // Get the API key from the Authorization header
+        
         const apiKey = req.headers.authorization?.replace(/bearer\s+/i, '') || '';
 
         if (!apiKey) {
@@ -28,6 +29,7 @@ module.exports = startServerAndCreateNextHandler(server, {
         }
 
         // Verify the API key against Firebase
+        
         const customer = await getCustomerByApiKey(apiKey);
         console.log('Checking customer from firebase:', customer);
 

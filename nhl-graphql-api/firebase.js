@@ -67,10 +67,17 @@ let db;
 try {
     // Use service account if available, otherwise use environment variables
     if (firebaseConfig) {
+        console.log('Initializing Firebase with service account config');
+        console.log('Project ID:', firebaseConfig.project_id);
+        console.log('Client Email:', firebaseConfig.client_email);
+        
         if (!admin.apps.length) {
             admin.initializeApp({
                 credential: admin.credential.cert(firebaseConfig)
             });
+            console.log('Firebase app initialized successfully with service account');
+        } else {
+            console.log('Firebase app already initialized');
         }
     } else {
         console.log('Using environment variables for Firebase credentials');
