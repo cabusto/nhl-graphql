@@ -5,6 +5,13 @@ const fs = require('fs');
 const path = require('path');
 dotenv.config();
 
+console.log('NODE_ENV:', process.env.NODE_ENV);
+console.log('Firebase environment variables available:', {
+    projectId: !!process.env.FIREBASE_PROJECT_ID,
+    clientEmail: !!process.env.FIREBASE_CLIENT_EMAIL,
+    privateKey: !!process.env.FIREBASE_PRIVATE_KEY
+});
+
 // Enhanced private key fixing function
 function fixPrivateKey(key) {
     if (!key) return key;
@@ -70,7 +77,7 @@ try {
         console.log('Initializing Firebase with service account config');
         console.log('Project ID:', firebaseConfig.project_id);
         console.log('Client Email:', firebaseConfig.client_email);
-        
+
         if (!admin.apps.length) {
             admin.initializeApp({
                 credential: admin.credential.cert(firebaseConfig)

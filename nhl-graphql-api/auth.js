@@ -13,6 +13,8 @@ const planLimits = {
     unlimited: { requestsPerDay: Infinity }
 };
 
+console.log('Loading auth.js, db available:', !!db);
+
 async function getCustomerByApiKey(apiKey) {
     console.log(`Validating API key: ${apiKey.substring(0, 4)}...`);
 
