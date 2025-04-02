@@ -93,6 +93,7 @@ try {
 
         // Fix private key
         const privateKey = fixPrivateKey(process.env.FIREBASE_PRIVATE_KEY);
+        console.log(`Validating Private key: ${privateKey.substring(0, 24)}...`);
 
         // Initialize Firebase with environment variables
         if (!admin.apps.length) {
