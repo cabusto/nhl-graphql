@@ -50,7 +50,7 @@ module.exports = startServerAndCreateNextHandler(server, {
             const customer = await getCustomerByApiKey(apiKey);
 
             if (!customer) {
-                throw new Error('Invalid API key');
+                throw new Error('Invalid API key', apiKey.substring(0, 10));
             }
 
             return { customer, apiKey };

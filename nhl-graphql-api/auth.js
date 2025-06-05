@@ -1,6 +1,7 @@
 // This module handles API key authentication and rate limiting using Unkey
 // and provides fallback development keys for non-production environments.
 
+const { unkey } = require('./unkey');
 // Development API keys that always work
 const devApiKeys = {
     'development-key': { name: 'Developer', plan: 'unlimited', active: true },
@@ -17,7 +18,7 @@ const planLimits = {
 console.log('Loading auth.js with Unkey integration');
 
 async function getCustomerByApiKey(apiKey) {
-    console.log(`Validating API key: ${apiKey.substring(0, 4)}...`);
+    console.log(`Validating API key: ${apiKey.substring(0, 8)}...`);
 
     // Always accept development keys in non-production
     if (devApiKeys[apiKey] && process.env.NODE_ENV !== 'production') {
@@ -27,9 +28,9 @@ async function getCustomerByApiKey(apiKey) {
 
     try {
         console.log('Verifying key with Unkey...');
-        const { valid, error, meta, remaining } = await unkey.keys.verify({ key: apiKey });
+        const { result, error } = await unkey.keys.verify({ key: apiKey, apiId: process.env.UNKEY_ID });
 
-        if (!valid) {
+        if (!result.valid) {
             console.log('API key verification failed:', error || 'Invalid key');
 
             // Try fallback to development key if in non-production
