@@ -1,6 +1,7 @@
 // This module handles API key authentication and rate limiting using Unkey
 // and provides fallback development keys for non-production environments.
 
+const { unkey } = require('./unkey');
 // Development API keys that always work
 const devApiKeys = {
     'development-key': { name: 'Developer', plan: 'unlimited', active: true },
