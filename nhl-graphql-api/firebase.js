@@ -15,7 +15,7 @@ console.log('Firebase environment variables available:', {
 // Enhanced private key fixing function
 function fixPrivateKey(key) {
     if (!key) return key;
-
+  
     // Handle various formats that might be problematic
     let fixedKey = key;
 
@@ -74,6 +74,7 @@ let db;
 try {
     // Use service account if available, otherwise use environment variables
     if (firebaseConfig) {
+
         console.log('Initializing Firebase with service account config');
         console.log('Project ID:', firebaseConfig.project_id);
         console.log('Client Email:', firebaseConfig.client_email);
@@ -94,18 +95,6 @@ try {
         // Fix private key
         const privateKey = fixPrivateKey(process.env.FIREBASE_PRIVATE_KEY);
         console.log(`Validating Private key: ${privateKey.substring(0, 24)}...`);
-
-        // Initialize Firebase with environment variables
-        if (!admin.apps.length) {
-            admin.initializeApp({
-                credential: admin.credential.cert({
-                    projectId: process.env.FIREBASE_PROJECT_ID,
-                    clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-                    privateKey: privateKey
-                }),
-            });
-        }
-    }
 
     console.log('Firebase initialized successfully');
     db = admin.firestore();
