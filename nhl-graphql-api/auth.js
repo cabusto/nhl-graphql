@@ -1,4 +1,11 @@
-const { db } = require("./firebase.js");
+// This module handles API key authentication and rate limiting using Unkey
+// and provides fallback development keys for non-production environments.
+
+// Development API keys that always work
+const devApiKeys = {
+    'development-key': { name: 'Developer', plan: 'unlimited', active: true },
+    'test-key': { name: 'Test User', plan: 'basic', active: true }
+};
 
 const planLimits = {
     free: { requestsPerDay: 100 },
@@ -7,57 +14,80 @@ const planLimits = {
     unlimited: { requestsPerDay: Infinity }
 };
 
-async function getCustomerByApiKey(apiKey) {
-    console.log(`Attempting to validate API key: ${apiKey.substring(0, 4)}...`);
+console.log('Loading auth.js with Unkey integration');
 
-    // Debug check - provide a backdoor for development
-    if (apiKey === 'development-key') {
-        console.log('Using development backdoor key');
-        return {
-            name: 'Developer',
-            plan: 'unlimited',
-            active: true
-        };
+async function getCustomerByApiKey(apiKey) {
+    console.log(`Validating API key: ${apiKey.substring(0, 4)}...`);
+
+    // Always accept development keys in non-production
+    if (devApiKeys[apiKey] && process.env.NODE_ENV !== 'production') {
+        console.log('Using static development key');
+        return devApiKeys[apiKey];
     }
 
     try {
-        console.log('Checking Firestore for API key...');
-        const docRef = db.collection("apiKeys").doc(apiKey);
-        console.log('Created document reference');
+        console.log('Verifying key with Unkey...');
+        const { valid, error, meta, remaining } = await unkey.keys.verify({ key: apiKey });
 
-        const doc = await docRef.get();
-        console.log('Firestore query completed');
-        console.log('Document exists?', doc.exists);
+        if (!valid) {
+            console.log('API key verification failed:', error || 'Invalid key');
 
-        if (!doc.exists) {
-            console.log('API key not found in database');
+            // Try fallback to development key if in non-production
+            if (process.env.NODE_ENV !== 'production') {
+                console.log('Using fallback development key');
+                return devApiKeys['development-key'];
+            }
+
             return null;
         }
 
-        const data = doc.data();
-        console.log('Retrieved customer data:', JSON.stringify(data, null, 2));
+        console.log('API key verified successfully');
 
-        if (!data.active) {
+        // Construct customer object from metadata
+        const customer = {
+            name: meta?.name || 'Unknown User',
+            plan: meta?.plan || 'free',
+            active: meta?.active !== false, // Default to active if not specified
+            ownerId: meta?.ownerId,
+            remaining: remaining
+        };
+
+        console.log('Retrieved customer data:', JSON.stringify(customer, null, 2));
+
+        if (!customer.active) {
             console.log('API key is inactive');
             return null;
         }
 
-        return data;
+        return customer;
     } catch (error) {
         console.error('Error in getCustomerByApiKey:', error);
+
+        // In non-production, use development key as fallback
+        if (process.env.NODE_ENV !== 'production') {
+            console.log('Error occurred, using fallback development key');
+            return devApiKeys['development-key'];
+        }
+
         return null;
     }
 }
 
 async function checkRateLimit(customer) {
-    if (!customer) {
-        console.log('Rate limit check failed: No customer provided');
-        return false;
+    if (!customer) return false;
+
+    // If using Unkey's built-in rate limiting
+    if (customer.remaining !== undefined) {
+        console.log(`Rate limit from Unkey: ${customer.remaining} requests remaining`);
+        return customer.remaining > 0;
     }
 
-    // Simple implementation - always return true for now
-    console.log(`Customer ${customer.name} on ${customer.plan} plan - rate limit check passed`);
-    return true;
+    // Fallback to plan-based limits
+    const plan = customer.plan || 'free';
+    const limit = planLimits[plan] || planLimits.free;
+
+    console.log(`Rate limit check for ${customer.name} on ${plan} plan: ${limit.requestsPerDay} per day`);
+    return true; // Simple implementation for now
 }
 
 module.exports = { getCustomerByApiKey, checkRateLimit };

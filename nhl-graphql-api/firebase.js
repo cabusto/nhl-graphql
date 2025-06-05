@@ -5,10 +5,17 @@ const fs = require('fs');
 const path = require('path');
 dotenv.config();
 
+console.log('NODE_ENV:', process.env.NODE_ENV);
+console.log('Firebase environment variables available:', {
+    projectId: !!process.env.FIREBASE_PROJECT_ID,
+    clientEmail: !!process.env.FIREBASE_CLIENT_EMAIL,
+    privateKey: !!process.env.FIREBASE_PRIVATE_KEY
+});
+
 // Enhanced private key fixing function
 function fixPrivateKey(key) {
     if (!key) return key;
-
+  
     // Handle various formats that might be problematic
     let fixedKey = key;
 
@@ -67,10 +74,18 @@ let db;
 try {
     // Use service account if available, otherwise use environment variables
     if (firebaseConfig) {
+
+        console.log('Initializing Firebase with service account config');
+        console.log('Project ID:', firebaseConfig.project_id);
+        console.log('Client Email:', firebaseConfig.client_email);
+
         if (!admin.apps.length) {
             admin.initializeApp({
                 credential: admin.credential.cert(firebaseConfig)
             });
+            console.log('Firebase app initialized successfully with service account');
+        } else {
+            console.log('Firebase app already initialized');
         }
     } else {
         console.log('Using environment variables for Firebase credentials');
@@ -79,18 +94,7 @@ try {
 
         // Fix private key
         const privateKey = fixPrivateKey(process.env.FIREBASE_PRIVATE_KEY);
-
-        // Initialize Firebase with environment variables
-        if (!admin.apps.length) {
-            admin.initializeApp({
-                credential: admin.credential.cert({
-                    projectId: process.env.FIREBASE_PROJECT_ID,
-                    clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-                    privateKey: privateKey
-                }),
-            });
-        }
-    }
+        console.log(`Validating Private key: ${privateKey.substring(0, 24)}...`);
 
     console.log('Firebase initialized successfully');
     db = admin.firestore();
