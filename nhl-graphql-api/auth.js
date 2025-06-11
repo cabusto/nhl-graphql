@@ -46,11 +46,12 @@ async function getCustomerByApiKey(apiKey) {
 
         // Construct customer object from metadata
         const customer = {
-            name: meta?.name || 'Unknown User',
-            plan: meta?.plan || 'free',
-            active: meta?.active !== false, // Default to active if not specified
-            ownerId: meta?.ownerId,
-            remaining: remaining
+            name: result.customer || 'Unknown Customer',
+            plan: result.ratelimit || 'free', // Use Unkey's plan if available, otherwise default to free,
+            active: result.enabled, // Default to active if not specified
+            expiresAt: result.expires || null, // Use Unkey's expiration if available
+            ownerId: result.ownerId,
+            remaining: result.remaining || 0, // Use Unkey's remaining requests if available
         };
 
         console.log('Retrieved customer data:', JSON.stringify(customer, null, 2));
@@ -75,6 +76,7 @@ async function getCustomerByApiKey(apiKey) {
 }
 
 async function checkRateLimit(customer) {
+    console.log(`Checking rate limit for customer: ${customer.name || 'Unknown'}`);
     if (!customer) return false;
 
     // If using Unkey's built-in rate limiting

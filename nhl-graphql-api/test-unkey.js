@@ -6,12 +6,13 @@ async function testValidateKey() {
   console.log('Testing ValidateKey...');
 
   // Try to verify a test key
-  const { result, error } = await unkey.keys.verify({
+  const { result, error, meta } = await unkey.keys.verify({
     key: process.env.TEST_KEY,
     apiId: process.env.UNKEY_ID
   });
 
   console.log('Verification result:', result);
+  console.log('Meta result:', meta);
 
   if (error) {
     console.error('Error verifying key:', error);
