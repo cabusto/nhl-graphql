@@ -1,3 +1,7 @@
+// local graphQL API for NHL games data
+// This file defines the GraphQL schema and resolvers for the NHL games data API.
+// nhl-graphql-api/index.js
+
 const { ApolloServer } = require('@apollo/server');
 const { startStandaloneServer } = require('@apollo/server/standalone');
 const fs = require('fs');
@@ -276,39 +280,52 @@ module.exports = {
 // Only create and start server if this file is run directly (not imported)
 if (require.main === module) {
   const { getCustomerByApiKey } = require('./auth');
+  const loggingPlugin = require('./plugins/loggingPlugin');
 
   // Create an Apollo Server instance for local development only
   const server = new ApolloServer({
     typeDefs,
     resolvers,
     introspection: true,
+    plugins: [loggingPlugin],
   });
 
   // Start standalone server for local development
   startStandaloneServer(server, {
     context: async ({ req }) => {
+      // Log request details
+      console.log(`[${new Date().toISOString()}] Incoming request: ${req.method} ${req.url}`);
+
       // For local development, allow requests without API key
       const apiKey = req.headers.authorization?.replace(/bearer\s+/i, '') || '';
+      console.log(`API Key: ${apiKey ? `${apiKey.substring(0, 6)}...` : 'none'}`);
 
       // In development, allow access without API key for testing
       if (process.env.NODE_ENV === 'development' && !apiKey) {
+        console.log('Development mode: using default developer account');
         return { customer: { name: 'Developer', plan: 'unlimited' } };
       }
 
       // Otherwise verify the API key
       if (!apiKey) {
+        console.log('No API key provided');
         throw new Error('API key is required');
       }
 
       const customer = await getCustomerByApiKey(apiKey);
+      console.log(`Customer validation: ${customer ? 'Valid' : 'Invalid'}`);
 
       if (!customer) {
+        console.log('Invalid API key');
         throw new Error('Invalid API key');
       }
 
       // Check rate limits
       const withinLimits = await checkRateLimit(customer);
+      console.log(`Rate limit check: ${withinLimits ? 'Within limits' : 'Exceeded'}`);
+
       if (!withinLimits) {
+        console.log('Rate limit exceeded');
         throw new Error('Rate limit exceeded for your plan');
       }
 

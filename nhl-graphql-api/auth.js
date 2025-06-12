@@ -1,6 +1,7 @@
 // This module handles API key authentication and rate limiting using Unkey
 // and provides fallback development keys for non-production environments.
 
+const { unkey } = require('./unkey');
 // Development API keys that always work
 const devApiKeys = {
     'development-key': { name: 'Developer', plan: 'unlimited', active: true },
@@ -17,7 +18,7 @@ const planLimits = {
 console.log('Loading auth.js with Unkey integration');
 
 async function getCustomerByApiKey(apiKey) {
-    console.log(`Validating API key: ${apiKey.substring(0, 4)}...`);
+    console.log(`Validating API key: ${apiKey.substring(0, 6)}...`);
 
     // Always accept development keys in non-production
     if (devApiKeys[apiKey] && process.env.NODE_ENV !== 'production') {
@@ -27,9 +28,9 @@ async function getCustomerByApiKey(apiKey) {
 
     try {
         console.log('Verifying key with Unkey...');
-        const { valid, error, meta, remaining } = await unkey.keys.verify({ key: apiKey });
+        const { result, error } = await unkey.keys.verify({ key: apiKey, apiId: process.env.UNKEY_ID });
 
-        if (!valid) {
+        if (!result.valid) {
             console.log('API key verification failed:', error || 'Invalid key');
 
             // Try fallback to development key if in non-production
@@ -45,11 +46,12 @@ async function getCustomerByApiKey(apiKey) {
 
         // Construct customer object from metadata
         const customer = {
-            name: meta?.name || 'Unknown User',
-            plan: meta?.plan || 'free',
-            active: meta?.active !== false, // Default to active if not specified
-            ownerId: meta?.ownerId,
-            remaining: remaining
+            name: result.customer || 'Unknown Customer',
+            plan: result.ratelimit || 'free', // Use Unkey's plan if available, otherwise default to free,
+            active: result.enabled, // Default to active if not specified
+            expiresAt: result.expires || null, // Use Unkey's expiration if available
+            ownerId: result.ownerId,
+            remaining: result.remaining || 0, // Use Unkey's remaining requests if available
         };
 
         console.log('Retrieved customer data:', JSON.stringify(customer, null, 2));
@@ -74,6 +76,7 @@ async function getCustomerByApiKey(apiKey) {
 }
 
 async function checkRateLimit(customer) {
+    console.log(`Checking rate limit for customer: ${customer.name || 'Unknown'}`);
     if (!customer) return false;
 
     // If using Unkey's built-in rate limiting
