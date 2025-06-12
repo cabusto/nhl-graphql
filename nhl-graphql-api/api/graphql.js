@@ -25,7 +25,7 @@ module.exports = startServerAndCreateNextHandler(server, {
         try {
             // Log request information
             console.log(`[${new Date().toISOString()}] Incoming request to Vercel function`);
-            
+
             // Special handling for GraphQL playground and introspection
             const isIntrospection = req.body?.operationName === 'IntrospectionQuery' ||
                 req.body?.query?.includes('__schema');
@@ -42,14 +42,7 @@ module.exports = startServerAndCreateNextHandler(server, {
 
             // Handle no API key case
             if (!apiKey) {
-                // Handle public access (if enabled)
-                if (process.env.ALLOW_PUBLIC_ACCESS === 'true') {
-                    console.log('Public access allowed');
-                    return { customer: { name: 'Public', plan: 'free' } };
-                }
-
                 return { error: 'API key is required' };
-                //throw new Error('API key is required');
             }
 
             // Get customer details
