@@ -42,7 +42,7 @@ module.exports = startServerAndCreateNextHandler(server, {
 
             // Handle no API key case
             if (!apiKey) {
-                return { error: 'API key is required' };
+                throw new Error('API key is required');
             }
 
             // Get customer details
@@ -50,8 +50,7 @@ module.exports = startServerAndCreateNextHandler(server, {
             console.log('Customer validation:', customer ? 'Valid' : 'Invalid');
 
             if (!customer) {
-                return { error: `Invalid API key: ${apiKey.substring(0, 6)}...` };
-                //throw new Error('Invalid API key', apiKey.substring(0, 6));
+                throw new Error('Invalid API key', apiKey.substring(0, 6));
             }
 
             console.log(`Authenticated user: ${customer.name}, Plan: ${customer.plan}`);
