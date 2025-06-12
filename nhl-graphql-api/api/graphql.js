@@ -3,6 +3,7 @@ const { startServerAndCreateNextHandler } = require('@as-integrations/next');
 const { ApolloServerPluginLandingPageLocalDefault } = require('@apollo/server/plugin/landingPage/default');
 const { typeDefs, resolvers } = require('../index');
 const { getCustomerByApiKey } = require('../auth');
+const loggingPlugin = require('../plugins/loggingPlugin');
 
 // Create a new Apollo Server instance for the API route
 const server = new ApolloServer({
@@ -10,6 +11,7 @@ const server = new ApolloServer({
     resolvers,
     introspection: true,
     plugins: [
+        loggingPlugin,
         ApolloServerPluginLandingPageLocalDefault({
             embed: true,
             includeCookies: true
@@ -21,6 +23,9 @@ const server = new ApolloServer({
 module.exports = startServerAndCreateNextHandler(server, {
     context: async (req) => {
         try {
+            // Log request information
+            console.log(`[${new Date().toISOString()}] Incoming request to Vercel function`);
+            
             // Special handling for GraphQL playground and introspection
             const isIntrospection = req.body?.operationName === 'IntrospectionQuery' ||
                 req.body?.query?.includes('__schema');
@@ -33,7 +38,7 @@ module.exports = startServerAndCreateNextHandler(server, {
 
             // Get API key from header
             const apiKey = req.headers.authorization?.replace(/^bearer\s+/i, '') || '';
-            console.log('Auth header:', req.headers.authorization);
+            console.log('API Key:', apiKey ? `${apiKey.substring(0, 6)}...` : 'none');
 
             // Handle no API key case
             if (!apiKey) {
@@ -43,16 +48,20 @@ module.exports = startServerAndCreateNextHandler(server, {
                     return { customer: { name: 'Public', plan: 'free' } };
                 }
 
-                throw new Error('API key is required');
+                return { error: 'API key is required' };
+                //throw new Error('API key is required');
             }
 
             // Get customer details
             const customer = await getCustomerByApiKey(apiKey);
+            console.log('Customer validation:', customer ? 'Valid' : 'Invalid');
 
             if (!customer) {
-                throw new Error('Invalid API key', apiKey.substring(0, 10));
+                return { error: `Invalid API key: ${apiKey.substring(0, 6)}...` };
+                //throw new Error('Invalid API key', apiKey.substring(0, 10));
             }
 
+            console.log(`Authenticated user: ${customer.name}, Plan: ${customer.plan}`);
             return { customer, apiKey };
         } catch (error) {
             console.error('Authentication error:', error.message);
