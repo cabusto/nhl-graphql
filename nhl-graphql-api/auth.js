@@ -18,7 +18,7 @@ const planLimits = {
 console.log('Loading auth.js with Unkey integration');
 
 async function getCustomerByApiKey(apiKey) {
-    console.log(`Validating API key: ${apiKey.substring(0, 8)}...`);
+    console.log(`Validating API key: ${apiKey.substring(0, 6)}...`);
 
     // Always accept development keys in non-production
     if (devApiKeys[apiKey] && process.env.NODE_ENV !== 'production') {
