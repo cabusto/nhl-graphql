@@ -50,7 +50,7 @@ module.exports = startServerAndCreateNextHandler(server, {
             console.log('Customer validation:', customer ? 'Valid' : 'Invalid');
 
             if (!customer) {
-                throw new Error('Invalid API key', apiKey.substring(0, 6));
+                throw new Error(`Invalid API key: ${apiKey.substring(0, 6)}...`);
             }
 
             console.log(`Authenticated user: ${customer.name}, Plan: ${customer.plan}`);
